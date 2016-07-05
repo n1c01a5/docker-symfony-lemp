@@ -12,6 +12,9 @@ Others commands
 ---------------
 
 ```
+# Rights for cache and logs
+sudo chmod 777 -R /var/cache
+sudo chmod 777 -R /var/logs
 #  IP of nginx container
 docker inspect --format '' $(docker ps -f name=nginx -q)
 # Add host of the app
