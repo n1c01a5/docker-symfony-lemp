@@ -10,6 +10,8 @@ To run these containers : ```docker-compose up```.
 
 Others commands
 ---------------
+
+```
 #  IP of nginx container
 docker inspect --format '' $(docker ps -f name=nginx -q)
 # Add host of the app
@@ -31,3 +33,4 @@ $ sudo chmod -R 777 symfony/app/cache symfony/app/logs
 $ docker stats $(docker inspect -f "" $(docker ps -q))
 # Remove containers
 $ docker rm $(docker ps -a -q)
+```
